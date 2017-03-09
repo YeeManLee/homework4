@@ -1,72 +1,111 @@
+
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<html>
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>twentytwenty</title>
-  <link href="css/foundation.css" rel="stylesheet" type="text/css" />
-  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Edit</title>
 </head>
-  <body>
 
-    <div class="row" style="margin-top: 2em;">
-      <div class="large-4 columns">
-        <h3>Basic Usage</h3>
-        <p>Demonstrates basic usage of the plugin.</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container">
-          <img src="img/1_1.jpg" />
-          <img src="img/1_2.jpg" />
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1 style="text-align:center">edit</h1>
+            <p class="lead" style="text-align:center">edit</p>
         </div>
-      </div>
-    </div>
-    
-    <div class="row" style="margin-top: 2em; margin-bottom: 2em;">
-      <div class="large-4 columns">
-        <h3>Vertical Orientation</h3>
-        <p>Demonstrates sliding up and down.</p>
-      </div>
-      <div class="large-8 columns">
-        <div class="twentytwenty-container" data-orientation="vertical">
-          <img src="img/1_1.jpg" />
-          <img src="img/1_2.jpg" />
+        <div class="row">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <img src="http://images.www.sizz.hk/wp-content/uploads/2016/05/job7.jpg" alt="Comic" style="text-align:center">
+                <div>
+                    <p> </p>
+                </div>
+                <div>
+                    <p> </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div>
+                    <label>edit</label>
+                    <select id="index">
+                      <option value="one">商科課程</option>
+                      <option value="two">文學及社會科學</option>
+                      <option value="three">機械、電機、電子及輪機工程</option>
+                      <option value="four">建築及營造工程</option>
+                      <option value="five">電腦課程</option>
+                      <option value="six">純科學</option>
+                      <option value="seven">醫療衛生課程</option>
+                      <option value="eight">教育</option>
+                      <option value="nine">紡織、設計及其他工業技術</option>
+                      <option value="ten">其他科目</option>
+                     </select>
+                </div>
+                <div>
+                    <p> </p>
+                </div>
+                <div>
+                    <p> </p>
+                </div>
+                <div>
+                    <p> </p>
+                </div>
+                <div>
+                    <p> </p>
+                </div>
+                <div>
+                    <p> </p>
+                </div>
+                <div><button class="btn btn-primary" id="submit">睇結果</button></div>
+                <div>
+                    <p> </p>
+                </div>
+                <div class="form-group">
+                    <label for="headcount">人數</label>
+                    <input class="form-control" type="text" id="output" readonly="">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        <footer>
+            <div class="footer">
+                <a href="http://www.bycensus2016.gov.hk/tc/bc-mt.html#footnote2">See Original Data Here</a>
+            </div>
+        </footer>
+        <script text="text/javascipt">
+            $(function() {
+                // Routine format; put all your jQuery initialisation inside
+                $('#submit').click(function() {
+                    var index = $('#index').val();
+                    $('#output').val(output);
+                    if (index == "one") {
+                        output = "695 489"
+                    } else if (index == "two") {
+                        output = "366 529"
+                    } else if (index == "three") {
+                        output = "177 695"
+                    } else if (index == "four") {
+                        output = "170 196"
+                    } else if (index == "five") {
+                        output = "156 674"
+                    } else if (index == "six") {
+                        output = "133 749"
+                    } else if (index == "seven") {
+                        output = "120 528"
+                    } else if (index == "eight") {
+                        output = "104 410"
+                    } else if (index == "nine") {
+                        output = "31 221"
+                    } else {
+                        output = "173 616"
+                    }
+                });
+            });
+        </script>
+</body>
 
-    <div class="row" style="margin-bottom: 2em;">
-      <div class="large-4 columns">
-        <h3>Side by side</h3>
-        <p>Using multiple comparisons at once.</p>
-      </div>
-      <div class="large-4 columns">
-        <div class="twentytwenty-container">
-          <img src="img/2_1.jpg" />
-          <img src="img/2_2.jpg" />
-        </div>
-      </div>
-      <div class="large-4 columns">
-        <div class="twentytwenty-container">
-          <img src="img/3_1.jpg" />
-          <img src="img/3_2.jpg" />
-        </div>
-      </div>
-    </div>
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="js/jquery.event.move.js"></script>
-    <script src="js/jquery.twentytwenty.js"></script>
-    <script>
-    $(window).load(function(){
-      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-    });
-    </script>
-  </body>
 </html>
