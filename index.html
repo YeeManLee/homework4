@@ -57,7 +57,9 @@ text-align: center;
 </div>
 		<br>
 	<div style="background-color:lightcyan;">
-                    <label style="font-size:36">用人數來猜猜吧</label>
+                              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div>
+                    <label style=”font-size:36”>用人數來猜猜吧</label>
                     <select id="index">
                       <option value="one">6,646,415</option>
                       <option value="two">121,775</option>
@@ -69,46 +71,29 @@ text-align: center;
                       <option value="eight">15,234</option>
                       <option value="nine">14,749</option>
                       <option value="ten">14,669</option>
-		      <option value="eleven">11,493</option>
-		      <option value="twelve">10,678</option>
-	              <option value="thirteen">68,277</option>
+                      <option value="eleven">11,493</option>
+                      <option value="twelve">10,678</option>
+                      <option value="thirteen">68,277</option>
                      </select>
-                <div>
-                    <p> </p>
                 </div>
-                <div>
-                    <p> </p>
-                </div>
-                <div>
-                    <p> </p>
-                </div>
-                <div>
-                    <p> </p>
-                </div>
-                <div>
-                    <p> </p>
-                </div>
-	 <div><button class="btn btn-primary" id="submit" style=color:paleturquoise>開估！</button></div>
-                <div>
-                    <p> </p>
-                </div>
+                <br />
+                <div><button class="btn btn-primary" id="submit" style=color:paleturquoise>開估!</button></div>
+                <br />
                 <div class="form-group">
-                    <label for="headcount">是什麼人呢？</label>
+                    <label for="headcount">是什麼人呢?</label>
                     <input class="form-control" type="text" id="output" readonly="">
                 </div>
-		</div>
-	<img src="http://cw1.tw/CW/images/article/C1455075616949.jpg" alt="Comic" style="text-align:center">	    
-	        <footer>
-            <div class="footer">
-		    <a href="http://www.bycensus2016.gov.hk/tc/index.html">Reference</a>
             </div>
-        </footer>
-         <script text="text/javascipt">
+        </div>
+      <img src="http://cw1.tw/CW/images/article/C1455075616949.jpg" alt="Comic" style="text-align:center">
+  <div class="page-footer">
+            <a href="http://www.bycensus2016.gov.hk/tc/index.html" target="_blank">Reference</a>
+        </div>
+        <script text="text/javascipt">
             $(function() {
                 // Routine format; put all your jQuery initialisation inside
                 $('#submit').click(function() {
                     var index = $('#index').val();
-                    $('#output').val(output);
                     if (index == "one") {
                         output = "香港人"
                     } else if (index == "two") {
@@ -129,15 +114,17 @@ text-align: center;
                         output = "美國人"
                     } else if (index == "ten") {
                         output = "澳洲人"
-	            } else if (index == "eleven") {
+                    } else if (index == "eleven") {
                         output = "泰國人"
-		    } else if (index == "twelve") {
+                    } else if (index == "twelve") {
                         output = "日本人"
-	            } else if (index == "thirteen") {
+                    } else {
                         output = "其他"
                     }
+                    $('#output').val(output);
                 });
             });
-        </script>     
+        </script>
+
 	</body>
 	</html>
