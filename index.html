@@ -1,133 +1,134 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>什麼人住在香港？</title>
-</head>	
-<style>
-.jumbotron {
-margin-bottom: 0px;
-background-image: url(https://www.credit-suisse.com/media/production/pb/images/hk/privatebanking/mood-main/klp-istock-000015120184-1030x430.jpg);
-background-position: 0% 25%;
-background-size: cover;
-background-repeat: no-repeat;
-color: azure;
-font-style:impact;
-text-align: center;
-}
-
-.quote{
-    text-align: center;
-    font-style: impact;
-    font-size: 50;
-}
-
-
-.lead{
-    text-align: center;
-    color: black;
-    text-shadow: white  0.1em 0.1em 0.1em;
-    background-color: white;
-}
-
-.image_with_caption{
-        text-align: center;
-        font-style: impact;
-}
-
-</style>
-<body>
-	<header>
-	 <div class="jumbotron">
-            <h1 style="font-style:impact">什麼人住在香港？</h1>
-            <h2 style="font-style:impact">HKBU JOUR2106 Homework4 by Lee Yee Man</h2>
-		</div> 
-    </header>
-	<br>
-	<div class="quote">
-香港是個國際城市，除了華人，也有來自五湖四海的朋友聚居於此。
-</div>
+	<html>
+	<head>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <!-- Optional theme -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	    <!-- Latest compiled and minified JavaScript -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="style.css">
+	    <title>什麼人住在香港？</title>
+	</head>	
+	<style>
+	.jumbotron {
+	margin-bottom: 0px;
+	background-image: url(https://www.credit-suisse.com/media/production/pb/images/hk/privatebanking/mood-main/klp-istock-000015120184-1030x430.jpg);
+	background-position: 0% 25%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: azure;
+	font-style:impact;
+	text-align: center;
+	}
+	
+	.quote{
+	    text-align: center;
+	    font-style: impact;
+	    font-size: 50;
+	}
+	
+	
+	.lead{
+	    text-align: center;
+	    color: black;
+	    text-shadow: white  0.1em 0.1em 0.1em;
+	    background-color: white;
+	}
+	
+	.image_with_caption{
+	        text-align: center;
+	        font-style: impact;
+	}
+	
+	</style>
+	<body>
+		<header>
+		 <div class="jumbotron">
+	            <h1 style="font-style:impact">什麼人住在香港？</h1>
+	            <h2 style="font-style:impact">HKBU JOUR2106 Homework4 by Lee Yee Man</h2>
+			</div> 
+	    </header>
 		<br>
-
-<div>
-                              <div class="col-md-4 col-sm-12 col-xs-12">
-           <div>
-                    <label style=”font-size:36”>用人數來猜猜吧</label>
-                    <select id="index">
-                      <option value="one">6,646,415</option>
-                      <option value="two">121,775</option>
-                      <option value="three">186,869</option>
-                      <option value="four">159,901</option>
-                      <option value="five">35,069</option>
-                      <option value="six">28,777</option>
-                      <option value="seven">22,679</option>
-                      <option value="eight">15,234</option>
-                      <option value="nine">14,749</option>
-                      <option value="ten">14,669</option>
-                      <option value="eleven">11,493</option>
-                      <option value="twelve">10,678</option>
-                      <option value="thirteen">68,277</option>
-                     </select>
-                </div>
-                <br />
-                <div><button class="btn btn-primary" id="submit" style=color:paleturquoise>開估!</button></div>
-		</div>
-                <br />
-                <div class="form-group">
-              <div>      
-			<label for="headcount">是什麼人呢?</label>
-                    <input class="form-control" type="text" id="output" readonly="">
-                </div>
+		<div class="quote">
+	香港是個國際城市，除了華人，也有來自五湖四海的朋友聚居於此。
 	</div>
-	</div>
-      <img src="http://cw1.tw/CW/images/article/C1455075616949.jpg" alt="Comic" style="text-align:center">
-  <div class="page-footer">
-            <a href="http://www.bycensus2016.gov.hk/tc/index.html" target="_blank">Reference</a>
-        </div>
-        <script text="text/javascipt">
-            $(function() {
-                // Routine format; put all your jQuery initialisation inside
-                $('#submit').click(function() {
-                    var index = $('#index').val();
-                    if (index == "one") {
-                        output = "香港人"
-                    } else if (index == "two") {
-                        output = "內地人"
-                    } else if (index == "three") {
-                        output = "菲律賓人"
-                    } else if (index == "four") {
-                        output = "印尼人"
-                    } else if (index == "five") {
-                        output = "英國人"
-                    } else if (index == "six") {
-                        output = "印度人"
-                    } else if (index == "seven") {
-                        output = "尼泊爾人"
-                    } else if (index == "eight") {
-                        output = "巴基斯坦人"
-                    } else if (index == "nine") {
-                        output = "美國人"
-                    } else if (index == "ten") {
-                        output = "澳洲人"
-                    } else if (index == "eleven") {
-                        output = "泰國人"
-                    } else if (index == "twelve") {
-                        output = "日本人"
-                    } else {
-                        output = "其他"
-                    }
-                    $('#output').val(output);
-                });
-            });
-        </script>
+			<br>
+	div {
+	    background-color: lightcyan;
+	}
+		<div>
+	                              <div class="col-md-4 col-sm-12 col-xs-12">
+	                <div>
+	                    <label style=”font-size:36”>用人數來猜猜吧</label>
+	                    <select id="index">
+	                      <option value="one">6,646,415</option>
+	                      <option value="two">121,775</option>
+	                      <option value="three">186,869</option>
+	                      <option value="four">159,901</option>
+	                      <option value="five">35,069</option>
+	                      <option value="six">28,777</option>
+	                      <option value="seven">22,679</option>
+	                      <option value="eight">15,234</option>
+	                      <option value="nine">14,749</option>
+	                      <option value="ten">14,669</option>
+	                      <option value="eleven">11,493</option>
+	                      <option value="twelve">10,678</option>
+	                      <option value="thirteen">68,277</option>
+	                     </select>
+	                </div>
+	                <br />
+	                <div><button class="btn btn-primary" id="submit" style=color:paleturquoise>開估!</button></div>
+			</div>
+	                <br />
+	                <div class="form-group">
+	                    <label for="headcount">是什麼人呢?</label>
+	                    <input class="form-control" type="text" id="output" readonly="">
+	                </div>
+	         </div>
+	      <img src="http://cw1.tw/CW/images/article/C1455075616949.jpg" alt="Comic" style="text-align:center">
+	  <div class="page-footer">
+	            <a href="http://www.bycensus2016.gov.hk/tc/index.html" target="_blank">Reference</a>
+	        </div>
+	        <script text="text/javascipt">
+	            $(function() {
+	                // Routine format; put all your jQuery initialisation inside
+	                $('#submit').click(function() {
+	                    var index = $('#index').val();
+	                    if (index == "one") {
+	                        output = "香港人"
+	                    } else if (index == "two") {
+	                        output = "內地人"
+	                    } else if (index == "three") {
+	                        output = "菲律賓人"
+	                    } else if (index == "four") {
+	                        output = "印尼人"
+	                    } else if (index == "five") {
+	                        output = "英國人"
+	                    } else if (index == "six") {
+	                        output = "印度人"
+	                    } else if (index == "seven") {
+	                        output = "尼泊爾人"
+	                    } else if (index == "eight") {
+	                        output = "巴基斯坦人"
+	                    } else if (index == "nine") {
+	                        output = "美國人"
+	                    } else if (index == "ten") {
+	                        output = "澳洲人"
+	                    } else if (index == "eleven") {
+	                        output = "泰國人"
+	                    } else if (index == "twelve") {
+	                        output = "日本人"
+	                    } else {
+	                        output = "其他"
+	                    }
+	                    $('#output').val(output);
+	                });
+	            });
+	        </script>
+	
 
-	</body>
-	</html>
+		</body>
+		</html>
+
